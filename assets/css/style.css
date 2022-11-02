@@ -1458,3 +1458,30 @@ main {
 .my-float{
 	margin-top:16px;
 }
+
+/* Spotify */
+
+ul#episodes {
+  width: 30%;
+  margin-top: -50px;
+}
+
+ul#episodes > li {
+  list-style-type: none;
+}
+
+.buttonSpotify {
+  text-align: left !important;
+  border-radius: 7px;
+  border: 0;
+  background: #191414;
+  color: #fff;
+  padding:  5px 0 5px 15px;
+  margin:  0 0 3px 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.buttonSpotify:hover {
+  background: #692983;
+}
