@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,7 +30,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <a href="https://api.whatsapp.com/send?phone=+541160993818&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20."
     class="float" target="_blank">
-  <img style="filter: drop-shadow(0px 0px 2px #b4b4b4);" src="./assets/img/custom/icono-whatsapp.png" width="80">
+    <img style="filter: drop-shadow(0px 0px 2px #b4b4b4);" src="./assets/img/custom/icono-whatsapp.png" width="80">
   </a>
 
   <!-- Template Main CSS File -->
@@ -107,7 +109,9 @@
       <div class="container">
 
         <div style="display:none;">
-          <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+          <iframe style="border:0; width: 100%; height: 270px;"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+            frameborder="0" allowfullscreen></iframe>
         </div>
 
         <div class="row mt-5">
@@ -138,19 +142,21 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="https://mailthis.to/tuvozesvos" method="post" role="form" class="php-email-form">
+            <form action="https://mailthis.to/tuvozesvos" method="POST" encType="multipart/form-data" role="form"
+              class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                  <input type="email" class="form-control" name="_replyto" id="email" placeholder="Tu Email" required>
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4" required>
+                <input type="text" class="form-control" name="_subject" id="subject" placeholder="Asunto"
+                  data-rule="minlen:4" required>
                 <div class="validate"></div>
               </div>
               <div class="form-group mt-3">
@@ -162,6 +168,9 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
               </div>
+              <input type="hidden" name="_after" value="http://www.tuvozesvos.com/">
+              <input type="hidden" name="_honeypot" value="">
+              <input type="hidden" name="_confirmation" value="">
               <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
             </form>
 
@@ -181,8 +190,10 @@
       <p>Un espacio de acompañamiento y desarrollo personal.</p>
       <div class="redes-sociales">
         <a href="https://www.tiktok.com/@tuvozesvos"><img src="./assets/img/custom/icono-tiktok.png" width="80"></a>
-        <a href="https://open.spotify.com/show/5MagAqhDGNkhrtFL2C4Kda"><img src="./assets/img/custom/icono-spotify.png" width="80"></a>
-        <a href="https://www.instagram.com/tuvozesvos/"><img src="./assets/img/custom/icono-instagram.png" width="80"></a>
+        <a href="https://open.spotify.com/show/5MagAqhDGNkhrtFL2C4Kda"><img src="./assets/img/custom/icono-spotify.png"
+            width="80"></a>
+        <a href="https://www.instagram.com/tuvozesvos/"><img src="./assets/img/custom/icono-instagram.png"
+            width="80"></a>
         <a href="mailto:tuvozesvos@gmail.com"><img src="./assets/img/custom/icono-email.png" width="80"></a>
         <a href="https://cafecito.app/tuvozesvos"><img src="./assets/img/custom/icono-cafecito.png" width="80"></a>
       </div>
@@ -199,7 +210,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
