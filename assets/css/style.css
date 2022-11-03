@@ -1484,6 +1484,24 @@ ul#episodes > li {
   background: #692983;
 }
 
+.spotify-podcast {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .spotify-podcast {
+    flex-direction: column;
+  }
+  ul#episodes {
+    width: 100%;
+    margin-top: -50px;
+    margin-left: -30px;
+  }
+}
+
 .redes-sociales a {
   filter: drop-shadow(0px 0px 2px #b4b4b4);
 }
