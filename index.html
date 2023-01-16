@@ -153,9 +153,21 @@
               <li>
                 <h5 style="text-align:center;font-weight:bold;margin-top:5px;">2023</h5>
               </li>
+              
+
               <li style="background:lightblue;border-radius:5px;">
                 <button class="buttonSpotify" data-spotify-id="spotify:episode:1VwGgBKOkWdhe7Lya7Nu26">
                   12 - Bici Mensajería. EMPRENDER
+                </button>
+              </li>
+              <li style="background:lightblue;border-radius:5px;">
+                <button class="buttonSpotify" data-spotify-id="spotify:episode:5KUKQhjsgADLAfQGPe9UdN">
+                  13 - Estrategias y organización del tiempo
+                </button>
+              </li>
+              <li style="background:lightblue;border-radius:5px;">
+                <button class="buttonSpotify" data-spotify-id="spotify:episode:1S2hEvs1b82KHH1sHsNoZS">
+                  14 - La Post Venta con Oswel Luna
                 </button>
               </li>
               <li>
@@ -259,7 +271,7 @@
     <section style="border-top: solid 1px #6e18a1; width:80%; margin:0 auto;" id="emprender" class="features">
       <div class="container d-flex justify-content-center">
         <div class="col-lg-10 col-md-6 icon-box">
-          <div class="icon2"><img width="140" src="./assets/img/custom/emprender-logo.jpeg"></div>
+          <div class="icon2"><img width="250" src="./assets/img/custom/emprender-logo.jpeg"></div>
           <h4 class="title"><a href="">TU VOZ ES VOS - EMPRENDER</a></h4>
           <p class="description">Ayudamos a emprendedoras y emprendedores a que consigan aumentar las ventas, mejorar la productividad, ordenar las finanzas, posicionar su marca y crecer en lo que hacen, a través de estrategias únicas definidas y prácticas.</p>
             <a href="https://forms.gle/ja7Hn6qmFk2PqN8c6" target="_blank" class="mas-info"><span>COMUNIDAD DE EMPRENDEDORES</span></a>
@@ -268,17 +280,18 @@
             <br><br>
             <div class="title">Acceder a la comunidad es <b>GRATUITO</b></div>
             <p class="description">Ser miembro de la comunidad te brindará acceso a conocer otras personas en tu misma situación, tener acceso al material y capacitaciones que te brindamos, intercambiar experiencias e ideas con otros emprendedores, seguirlos y que te sigan en tus redes, ofrecerles y contarles lo que haces, hacer trueque de productos y/o servicios y mucho más.</p>
-            <img width="100%" src="./assets/img/custom/comunidad.jpeg">
+            <img class="img-comunidad" src="./assets/img/custom/comunidad.jpeg">
             <br><br>
             <a class="mas-info">Completa el formulario y empezá a crecer</a>
             <br><br>
           <div class="title">Estos son algunos de los emprendimientos que ya forman parte de esta comunidad:</div>
           <br>
-          <div class="">
-              <p>Mensajería Quick</p>
-              <p>Los Panas Comidas Caseras</p>
-              <p>Masajes Terapéuticos OL</p>
-              <p>Cartadema</p>
+          <div class="comunidades">
+            <a href="https://instagram.com/mensajeria_quick.ar"><img src="./assets/img/custom/quick-eco-mensajeria.jpeg"></a>
+            <a href="https://instagram.com/lospanascomidacasera"><img src="./assets/img/custom/los-panas.jpg"></a>
+            <a href="https://instagram.com/masajesterapeuticosol"><img src="./assets/img/custom/oswel-luna.jpg"></a>
+            <a href="https://instagram.com/cartadema"><img src="./assets/img/custom/cartadema.jpg"></a>
+            <a href="https://www.instagram.com/pilates.house.pilar/"><img src="./assets/img/custom/josefina-del-campo.jpg"></a>
         </div>
       </div>
     </section>
@@ -430,7 +443,7 @@
       let options = {
         width: '60%',
         height: '300',
-        uri: 'spotify:episode:1VwGgBKOkWdhe7Lya7Nu26'
+        uri: 'spotify:episode:1S2hEvs1b82KHH1sHsNoZS'
       };
       let callback = (EmbedController) => {
         document.querySelectorAll('ul#episodes > li > button').forEach(
