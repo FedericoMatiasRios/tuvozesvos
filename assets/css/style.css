@@ -1574,3 +1574,59 @@ ul#episodes > li {
   font-family: maharlika;
   src: url(../font/Maharlika-Regular.ttf);
 }
+
+
+/* Comunidades Slider */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.sliderC {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.sliderC::before, .sliderC::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.sliderC::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.sliderC::before {
+  left: 0;
+  top: 0;
+}
+.sliderC .slide-trackC {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slide-trackC:hover {
+    animation-play-state: paused;
+  }
+
+.sliderC .slideC {
+  height: 100px;
+  width: 250px;
+}
+
+.slideC img {
+  width: 100px;
+  margin-left: 50px;
+}
