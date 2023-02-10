@@ -1592,7 +1592,7 @@ ul#episodes > li {
   margin: auto;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 100vw;
 }
 .sliderC::before, .sliderC::after {
   background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
