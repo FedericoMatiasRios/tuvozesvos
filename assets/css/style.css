@@ -1593,9 +1593,10 @@ ul#episodes > li {
   overflow: hidden;
   position: relative;
   width: 100vw;
+  max-width: 100%;
 }
 .sliderC::before, .sliderC::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 10%);
   content: "";
   height: 100px;
   position: absolute;
