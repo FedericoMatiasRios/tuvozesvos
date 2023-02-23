@@ -1564,6 +1564,18 @@ ul#episodes > li {
   .comunidades img {
     width: 50vw;
   }
+
+  .carousel-item:nth-child(1){
+    background-position: -65px 0px !important;
+  }
+
+  .carousel-item:nth-child(2){
+    background-position: -930px 0px !important;
+  }
+
+  .carousel-item:nth-child(3){
+    background-position: -370px 0px !important;
+  }
 }
 
 .redes-sociales a {
