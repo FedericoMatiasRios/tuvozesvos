@@ -160,38 +160,38 @@
   });
 
   /**
-   * Gallery isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let galelryContainer = select('.gallery-container');
-    if (galelryContainer) {
-      let galleryIsotope = new Isotope(galelryContainer, {
-        itemSelector: '.gallery-item',
-      });
+ * Gallery isotope and filter
+ */
+window.addEventListener('load', () => {
+  const galleryContainer = document.querySelector('.gallery-container');
+  if (galleryContainer) {
+    const galleryIsotope = new Isotope(galleryContainer, {
+      itemSelector: '.gallery-item',
+    });
 
-      let galleryFilters = select('#gallery-flters li', true);
+    const galleryFilters = document.querySelectorAll('#gallery-filters li');
 
-      on('click', '#gallery-flters li', function(e) {
+    galleryFilters.forEach((filter) => {
+      filter.addEventListener('click', (e) => {
         e.preventDefault();
-        galleryFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
+        galleryFilters.forEach((f) => {
+          f.classList.remove('filter-active');
         });
-        this.classList.add('filter-active');
+        filter.classList.add('filter-active');
 
         galleryIsotope.arrange({
-          filter: this.getAttribute('data-filter')
+          filter: filter.getAttribute('data-filter'),
         });
+      });
+    });
+  }
+});
 
-      }, true);
-    }
-
-  });
-
-  /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+/**
+ * Initiate lightbox
+ */
+const lightbox = GLightbox({
+  selector: '.glightbox',
+});
 
 })()
