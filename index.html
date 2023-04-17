@@ -144,11 +144,43 @@
           <br>
           <div class="spotify-podcast d-flex flex-column">
             
-            <!--div id="embed-iframe"></div-->
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/5MagAqhDGNkhrtFL2C4Kda?utm_source=generator" width="60%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+            <div id="embed-iframe"></div>
+            <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/5MagAqhDGNkhrtFL2C4Kda?utm_source=generator" width="60%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
             
-            <ul id="episodes">
+            <select id="episode-select" style="margin-top: -40px;margin-bottom: 20px;border-radius: 5px;font-weight: 600;padding: 10px;;">
+              <option disabled selected style="text-align: center;">Seleccione un episodio</option>
+              <option disabled>2022</option>
+              <option value="spotify:episode:4S2ww803a3jZmO2AlI61B8">Tu Voz es Vos (Trailer)</option>
+              <option value="spotify:episode:6ym4uQAlpVhf4dMvwiWjbo">1 - El Bloqueo</option>
+              <option value="spotify:episode:3cvCfdJF6RcGtfVCrWzc49">2 - Soy una estúpida</option>
+              <option value="spotify:episode:24oSFTR6aTRmV0mVWWa3Ap">3 - Nos están pasando cosas buenas</option>
+              <option value="spotify:episode:15ssFqaBzdEB64J3k8Cq8C">4 - Es un problema de comunicación</option>
+              <option value="spotify:episode:38VZqAjn0e5gSTQclDSDM0">5 - El tiempo es una caja</option>
+              <option value="spotify:episode:0ihSnSHtiaE1dLRGhwLQSV">6 - Sensaciones a otro nivel</option>
+              <option value="spotify:episode:750H0D0HU366Rn47zrR2zB">7 - Me decepcionas</option>
+              <option value="spotify:episode:38YO3Ag2eaWtE8rwsXDBcU">8 - La vida es un mundial</option>
+              <option value="spotify:episode:6DThcuXgLVWSWpLpMAudPU">9 - Me invade el desconcierto</option>
+              <option value="spotify:episode:2PZVMotIyPxKfzQnxmjE2a">10 - Lo logré!</option>
+              <option value="spotify:episode:7kI8RO2g5QInvrVcZWffRk">11 - Tradiciones familiares OUT</option>
+              <option value="spotify:episode:1VwGgBKOkWdhe7Lya7Nu26">12 - Bici Mensajería. EMPRENDER</option>
+              <option disabled>2023</option>
+              <option value="spotify:episode:5KUKQhjsgADLAfQGPe9UdN">13 - Estrategias y organización del tiempo</option>
+              <option value="spotify:episode:1S2hEvs1b82KHH1sHsNoZS">14 - La Post Venta con Oswel Luna</option>
+              <option value="spotify:episode:16izVV8hy5kkdGlz0KrtiF">15 - Tu toque especial y único</option>
+              <option value="spotify:episode:3osa6sKVbDmW6m8obz5l5T">16 - Emprender desde casa con Marisú Papaleo</option>
+              <option value="spotify:episode:1uE3mAPr5BSYnqBQ4TIkxM">17 - Seguí adelante, tu objetivo es el éxito</option>
+              <option value="spotify:episode:1D4PtuDlGLKkQQazzZ9omp">18 - Adiós a la Procastinación</option>
+              <option value="spotify:episode:4iVwPeSPuQHRwX8zguIuge">19 - Si te vas a mentir, mentite bien</option>
+              <option value="spotify:episode:3hDKSRPBLBgkKUXPzARoLi">20 - Estoy desbordada</option>
+              <option value="spotify:episode:63lQrSICVcnvbhQpRS3oV3">21 - Testimonio y charla sobre violencia psicológica y manipulación</option>
+              <option value="spotify:episode:4WNufMTzVBGDEZcJCHesFd">22 - Pauli Piparola, la emprendedora creadora de Caelis</option>
+              <option value="spotify:episode:7cTNpYRiGnOhwOCRTK8B6K">23 - No seamos perfectos, seamos felices</option>
+              <option value="spotify:episode:0lQzjW91KpADgqSYN8QZxP">24 - Motores eléctricos en Colombia con Camilo Yate Torres</option>
+              <option value="spotify:episode:0n0hPHy0H1K6My154WV352">25 - Arterapia con Josefina del Campo</option>
+              <option value="spotify:episode:6AZfldKoyZmdk9dTXmXOgQ">26 - Me confieso prejuiciosa</option>
+            </select>
+            
+            <ul id="episodes" style="display: none;">
               <li>
                 <h3 style="text-align:center;color: white;
                 filter: drop-shadow(0px 0px 3px black);
@@ -711,7 +743,6 @@
   <!-- Spotify -->
 
   <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
-
   <script>
     window.onSpotifyIframeApiReady = (IFrameAPI) => {
       let element = document.getElementById('embed-iframe');
@@ -721,12 +752,10 @@
         uri: 'spotify:episode:6AZfldKoyZmdk9dTXmXOgQ'
       };
       let callback = (EmbedController) => {
-        document.querySelectorAll('ul#episodes > li > button').forEach(
-          episode => {
-            episode.addEventListener('click', () => {
-              EmbedController.loadUri(episode.dataset.spotifyId)
-            });
-          })
+        let select = document.getElementById('episode-select');
+        select.addEventListener('change', () => {
+          EmbedController.loadUri(select.value);
+        });
       };
       IFrameAPI.createController(element, options, callback);
     };
