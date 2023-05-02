@@ -1570,15 +1570,11 @@ ul#episodes > li {
   }
 
   .carousel-item:nth-child(2){
-    background-image: url('/assets/img/custom/back2m.jpg') !important;
+    background-image: url('/assets/img/custom/back4m.jpg') !important;
   }
 
   .carousel-item:nth-child(3){
-    background-image: url('/assets/img/custom/back3m.jpg') !important;
-  }
-
-  .carousel-item:nth-child(4){
-    background-image: url('/assets/img/custom/back4m.jpg') !important;
+    background-image: url('/assets/img/custom/back1m.jpg') !important;
   }
 }
 
