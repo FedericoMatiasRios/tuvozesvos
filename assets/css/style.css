@@ -1589,45 +1589,29 @@ ul#episodes > li {
 
 
 /* Comunidades Slider */
-@keyframes scroll {
+.sliderC {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-trackC {
+  display: flex;
+  width: fit-content;
+  animation: slideC 60s linear infinite;
+}
+
+.slideC {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Adjust the spacing between logos */
+}
+
+@keyframes slideC {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-100%);
   }
-}
-.sliderC {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-}
-.sliderC::before, .sliderC::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 10%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 20px;
-  z-index: 2;
-}
-.sliderC::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.sliderC::before {
-  left: 0;
-  top: 0;
-}
-.sliderC .slide-trackC {
-  animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
 }
 
 .slide-trackC:hover {
@@ -1636,7 +1620,7 @@ ul#episodes > li {
 
 .sliderC .slideC {
   height: 100px;
-  width: 250px;
+  width: 150px;
 }
 
 .slideC img {
@@ -1646,45 +1630,25 @@ ul#episodes > li {
 
 
 /* Comunidades Slider 2 */
-@keyframes scroll2 {
-  100% {
+.sliderC2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slide-trackC2 {
+  display: flex;
+  animation: slideC2 40s linear infinite;
+  animation-fill-mode: forwards;
+  width: fit-content;
+}
+
+@keyframes slideC2 {
+  0% {
     transform: translateX(0);
   }
-  0% {
-    transform: translateX(calc(-250px * 7));
+  100% {
+    transform: translateX(100%);
   }
-}
-.sliderC2 {
-  background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-}
-.sliderC2::before, .sliderC2::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 10%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 20px;
-  z-index: 2;
-}
-.sliderC2::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.sliderC2::before {
-  left: 0;
-  top: 0;
-}
-.sliderC2 .slide-trackC2 {
-  animation: scroll2 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
 }
 
 .slide-trackC2:hover {
@@ -1693,7 +1657,7 @@ ul#episodes > li {
 
 .sliderC2 .slideC2 {
   height: 100px;
-  width: 250px;
+  width: 150px;
 }
 
 .slideC2 img {
