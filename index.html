@@ -720,6 +720,28 @@
 
   </main><!-- End #main -->
 
+<div id="demo-modal" class="modal">
+    <div class="modal__content">
+        <h1 style="font-size: 36px;">Conecta con tu Valentía</h1>
+
+        <p>
+            Inscribite al taller Conecta con tu Valentía, exclusivo para mujeres! <i class="fa fa-heart"></i> Dictado por Carolina Frances. 
+        </p>
+        <p>
+          Inscripción abierta hasta el 03/11!
+        </p>
+        <p>
+          ¡Apurate! No te quedes sin tu lugar.
+        </p>
+
+        <div class="modal__footer">
+           <a href="https://forms.gle/WLGU21KzR2J31sTSA" target="_blank">¡Me quiero inscribir!</a>
+        </div>
+
+        <a href="#" class="modal__close">&times;</a>
+    </div>
+</div>
+
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <a style="display:none;" href="https://hits.seeyoufarm.com"><img
@@ -809,6 +831,20 @@
   <script src="assets/js/main.js"></script>
 
   <script src="assets/js/custom-slider.js"></script>
+
+  <script>
+    // Function to open the page with a specific fragment identifier
+    function openPageWithFragment() {
+      // Set the location to the desired URL with the fragment identifier
+      window.location = "index.html#demo-modal";
+    }
+
+    // Wait for the DOM to be fully loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      // Call the function to open the page with the specified fragment identifier
+      openPageWithFragment();
+    });
+  </script>
 </body>
 
 </html>
