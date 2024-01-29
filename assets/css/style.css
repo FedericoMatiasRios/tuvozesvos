@@ -14,7 +14,7 @@ body {
 }
 
 a {
-  color: #c44ff4;
+  color: #c44ff4 !important;
   text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ h6 {
 
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
-  background-position: center top;
+  background-position: center 18%;
 }
 
 #hero .carousel-inner .carousel-item,
@@ -1566,7 +1566,7 @@ ul#episodes > li {
   }
 
   .carousel-item:nth-child(1){
-    background-image: url('/assets/img/custom/back1m.jpg') !important;
+    background-image: url('/assets/img/custom/back1m.png') !important;
   }
 
   .carousel-item:nth-child(2){
