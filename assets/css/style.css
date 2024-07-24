@@ -467,6 +467,9 @@ h6 {
   #hero h2 {
     font-size: 28px;
   }
+  .radio-container {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
 }
 
 @media (min-width: 1024px) {
