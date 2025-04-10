@@ -3,7 +3,9 @@
 
 <head>
   <!-- Google tag (gtag.js) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-WP92G4CCLN"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -107,7 +109,7 @@
         </div>
 
         <!-- Slide 2 -->
-<!--         <div class="carousel-item" style="background-image: url(assets/img/custom/back2.png)">
+        <!--         <div class="carousel-item" style="background-image: url(assets/img/custom/back2.png)">
         </div>
  -->
       </div>
@@ -135,93 +137,20 @@
         </div>
 
         <div
-          style="background-image: url('./assets/img/custom/background-episodes.jpg');padding-top: 20px;border-radius:25px;margin-bottom:20px;">
+          style="background-image: url('./assets/img/custom/background-episodes.jpg');padding-top: 20px;border-radius:25px;margin-bottom:20px;"
+          >
           <h1 style="text-align:center;background-color: #fff;">¡ESCUCHA EL PODCAST!<p
               style="color:#c44ff4;font-weight:900;">⬇ DALE PLAY ⬇</p>
           </h1>
-          <br>
-          <div class="spotify-podcast d-flex flex-column">
-            <br>
-            <div class="radio-container" style="display: flex;width: 100%;background: #012e4d;">
-              <div style="flex: 1;height:315px;width:100%;background-image: url('./assets/img/custom/banner.jpg');background-size:contain;background-repeat: no-repeat;background-position: center;">
+              <div class="youtube-video">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/videoseries?si=ag6YdHs6ku98NvuX&amp;list=PLQ5bj725ZxfIN2ChWKzIUvmrhRDGLrLeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
-              <iframe style="flex: 1;" height="315" src="https://www.youtube.com/embed/videoseries?si=8aq-Q2yOAp7y8ykk&amp;list=PLQ5bj725ZxfJF4pSrlMwIjYyBjvhdCKQ7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> 
             </div>
             <br>
-            <div id="embed-iframe"></div>
-            <!--iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/5MagAqhDGNkhrtFL2C4Kda?utm_source=generator" width="60%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe-->
-
-            <select id="episode-select"
-              style="margin-top: -40px;margin-bottom: 20px;border-radius: 5px;font-weight: 600;padding: 10px;width:60%;">
-              <option disabled selected style="text-align: center;">Seleccione un episodio (2022)</option>
-              <option value="spotify:episode:4S2ww803a3jZmO2AlI61B8">Tu Voz es Vos (Trailer)</option>
-              <option value="spotify:episode:6ym4uQAlpVhf4dMvwiWjbo">1 - El Bloqueo</option>
-              <option value="spotify:episode:3cvCfdJF6RcGtfVCrWzc49">2 - Soy una estúpida</option>
-              <option value="spotify:episode:24oSFTR6aTRmV0mVWWa3Ap">3 - Nos están pasando cosas buenas</option>
-              <option value="spotify:episode:15ssFqaBzdEB64J3k8Cq8C">4 - Es un problema de comunicación</option>
-              <option value="spotify:episode:38VZqAjn0e5gSTQclDSDM0">5 - El tiempo es una caja</option>
-              <option value="spotify:episode:0ihSnSHtiaE1dLRGhwLQSV">6 - Sensaciones a otro nivel</option>
-              <option value="spotify:episode:750H0D0HU366Rn47zrR2zB">7 - Me decepcionas</option>
-              <option value="spotify:episode:38YO3Ag2eaWtE8rwsXDBcU">8 - La vida es un mundial</option>
-              <option value="spotify:episode:6DThcuXgLVWSWpLpMAudPU">9 - Me invade el desconcierto</option>
-              <option value="spotify:episode:2PZVMotIyPxKfzQnxmjE2a">10 - Lo logré!</option>
-              <option value="spotify:episode:7kI8RO2g5QInvrVcZWffRk">11 - Tradiciones familiares OUT</option>
-              <option value="spotify:episode:1VwGgBKOkWdhe7Lya7Nu26">12 - Bici Mensajería. EMPRENDER</option>
-            </select>
-
-            <select id="episode-select2"
-              style="margin-bottom: 20px;border-radius: 5px;font-weight: 600;padding: 10px;width:60%;">
-              <option disabled selected style="text-align: center;">Seleccione un episodio (2023)</option>
-              <option value="spotify:episode:5KUKQhjsgADLAfQGPe9UdN">13 - Estrategias y organización del tiempo</option>
-              <option value="spotify:episode:1S2hEvs1b82KHH1sHsNoZS">14 - La Post Venta con Oswel Luna</option>
-              <option value="spotify:episode:16izVV8hy5kkdGlz0KrtiF">15 - Tu toque especial y único</option>
-              <option value="spotify:episode:3osa6sKVbDmW6m8obz5l5T">16 - Emprender desde casa con Marisú Papaleo
-              </option>
-              <option value="spotify:episode:1uE3mAPr5BSYnqBQ4TIkxM">17 - Seguí adelante, tu objetivo es el éxito
-              </option>
-              <option value="spotify:episode:1D4PtuDlGLKkQQazzZ9omp">18 - Adiós a la Procastinación</option>
-              <option value="spotify:episode:4iVwPeSPuQHRwX8zguIuge">19 - Si te vas a mentir, mentite bien</option>
-              <option value="spotify:episode:3hDKSRPBLBgkKUXPzARoLi">20 - Estoy desbordada</option>
-              <option value="spotify:episode:63lQrSICVcnvbhQpRS3oV3">21 - Testimonio y charla sobre violencia
-                psicológica y manipulación</option>
-              <option value="spotify:episode:4WNufMTzVBGDEZcJCHesFd">22 - Pauli Piparola, la emprendedora creadora de
-                Caelis</option>
-              <option value="spotify:episode:7cTNpYRiGnOhwOCRTK8B6K">23 - No seamos perfectos, seamos felices</option>
-              <option value="spotify:episode:0lQzjW91KpADgqSYN8QZxP">24 - Motores eléctricos en Colombia con Camilo Yate
-                Torres</option>
-              <option value="spotify:episode:0n0hPHy0H1K6My154WV352">25 - Arterapia con Josefina del Campo</option>
-              <option value="spotify:episode:6AZfldKoyZmdk9dTXmXOgQ">26 - Me confieso prejuiciosa</option>
-              <option value="spotify:episode:2vy8cwORIWdj5txSI3oCjG">27 - Confianza y autoestima en construcción
-              </option>
-              <option value="spotify:episode:5ICNx4hHSg4UeydGoiLw9t">28 - Me motivas</option>
-              <option value="spotify:episode:3BolvNr0qb0WRgbHjjY5vZ">29 - La voz de los adolescentes</option>
-              <option value="spotify:episode:3yOW8HB23MIhC5T3ARfhIj"> 30 - Quiero tener el control de todo</option>
-              <option value="spotify:episode:15yIpWPuXSKrMslrdYzQjH"> 31 - Diagnóstico de las áreas vitales</option>
-              <option value="spotify:episode:2LGhCxNWASem7vW9rRNn2z"> 32 - Reinventando el Poder Femenino: Un Podcast
-                para Superar Crisis y Despertar tu Grandeza</option>
-              <option value="spotify:episode:2JcU0M1yFd135MvBlHHPi0"> 33 - ¿Qué hacés por vos?</option>
-              <option value="spotify:episode:2oVdLXIx2y3h2VsNC7rgKF"> 34 - La voz de Ni una menos</option>
-              <option value="spotify:episode:2BRS3iLcZJAd1xk7sDkyIf"> 35 - Dejemos de romantizar la maternidad</option>
-              <option value="spotify:episode:1kir5tw1fVkXdnBdqbNRfR"> 36 - ¿Y si empezamos a VALORARNOS?</option>
-              <option value="spotify:episode:4IK0FN6qzXxokGA2IbTsxO"> 37 - Las mujeres y las finanzas con Florencia Escalada</option>
-              <option value="spotify:episode:1rHAu2HGwYX7xpEkRQ43nk"> 38 - Madres emprendedoras: Superando Obstáculos y Alcanzando el Éxito</option>
-              <option value="spotify:episode:150vwNYYO1tmEo53ZuaEvY"> 39 - Mi primera menstruación con Emi Cabrera</option>
-              <option value="spotify:episode:7p9bnIJBB6U8wu3tzZI36N"> 40 - El estado deseado</option>
-              <option value="spotify:episode:6qPO5d7uLSQweJ6EIIaQ0r"> 41 - Nuestro diálogo interno</option>
-              <option value="spotify:episode:0rZLg3TGKJJqgiWchVxWLH"> 42 - Cuánto te valoras a vos misma?</option>
-              <option value="spotify:episode:4JqnAvK0gOX9C2rRcHN21f"> 43 - Todo lo que crees, lo creas</option>
-              <option value="spotify:episode:7oYwmlVgPrpc96pOzXQBGZ"> 44 - Encontrar la vocación</option>
-            </select>
-            <span id="servicios"></span>
-            <select id="episode-select3"
-              style="margin-bottom: 20px;border-radius: 5px;font-weight: 600;padding: 10px;width:60%;">
-              <option disabled selected style="text-align: center;">Seleccione un episodio (2024)</option>
-              <option value="spotify:episode:0IUX6crXbS8uSRADbfgbAr">45 - Por qué 2024 debe ser tu año de realización?</option>
-              <option value="spotify:episode:5LKBGbaoQrrA8P3zqr4SB6">46 - La Valentía de poner límites</option>
-              <option value="spotify:episode:3wKEaC44j0nsbrpuZI5RfL">47 - La Valentía de pedir ayuda</option>
-              <option value="spotify:episode:6Ku6rGq8H5INAuQHmMpAWh">48 - Ser valiente para ser abundante
-              </option>
-            </select>
 
             <ul id="episodes" style="display: none;">
               <li>
@@ -234,7 +163,6 @@
                 filter: drop-shadow(0px 0px 5px black);
                 text-shadow: -3px 0 #2e2e2e, 0 2px #2e2e2e, 2px 0 #2e2e2e, 0 -2px #2e2e2e;">2023</h5>
               </li>
-
 
               <li style="background:lightblue;border-radius:5px;">
                 <button class="buttonSpotify" data-spotify-id="spotify:episode:1VwGgBKOkWdhe7Lya7Nu26">
@@ -390,185 +318,221 @@
               <div class="flip-card-inner">
                 <div class="flip-card-front">
                   <div class="services-components text-center">
-                      <img src="assets/img/servicios/1.jpeg">
+                    <img src="assets/img/servicios/1.jpeg">
                   </div>
                 </div>
                 <div class="flip-card-back flex">
-                    Virtuales e individuales<br>
-                    Frecuencia semanal<br>
-                    Zoom- Meet o videollamada<br>
-                    Duración 40'<br>
-                    1era sesión gratuita<br>
-                    Dinámicas, ejercicios y seguimiento<br>
-                    Acompañamiento durante todo el proceso y fuera de las sesiones
-                    <br><br>
-                    Consulta por el Pack de 4 sesiones al mes
+                  Virtuales e individuales<br>
+                  Frecuencia semanal<br>
+                  Zoom- Meet o videollamada<br>
+                  Duración 40'<br>
+                  1era sesión gratuita<br>
+                  Dinámicas, ejercicios y seguimiento<br>
+                  Acompañamiento durante todo el proceso y fuera de las sesiones
+                  <br><br>
+                  Consulta por el Pack de 4 sesiones al mes
                 </div>
               </div>
-          </div>
-      </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/2.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                      <p>
-                      Sesiones exclusivas porque las temáticas femeninas requieren una atención especial y comprometida. Maternidad Pareja Hogar Trabajo Propósito de vida.
-                      </p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/3.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                      <p>Si hace tiempo estás queriendo hacer algo y no estás pudiendo, si pensás mucho,  no decides ni te organizas, te distraes y sientes que no avanzas, toma sesiones de Coaching motivacional conmigo.</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/4.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>Caro y Oswel.  Brindamos asesoramiento a personas emprendedoras que quieran crecer y tener éxito en lo que hacen. Pprimera sesión y diagnóstico gratuito</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/5.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>@fatimadacruzcoach  Circulo de Realización Personal con Fátima Da Cruz  Programa que te brinda 6 estrategias claves para materializar lo que deseas y elevar tu frecuencia vibraria</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/6.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>Sesiones online individuales y talleres grupales  Sana tu linaje familiar
-                          Honra la historia de quienes han permitido que vos hoy estés acá</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/7.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>@carottonello Carolina Ottonello   Una sesión para saber cuál es la energía que te atraviesa, qué quieres manifestar y cuáles son los bloqueos que obstruyen tu avance.</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/8.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>@mvdesign  Verónica Perez  Tu emprendimiento con una personalidad única. Logo Paleta de colores Estilo Gestión de marca y producto </p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/9.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>Asesoramiento profesional en RRSS.  Guía y organización de contenido tendencia </p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/10.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>@soykiki.luna  La experta en creación de contenido para RRSS analiza tu emprendimiento y se encarga del material que necesitas publicar para que tu negocio crezca, sea reconocido y tenga éxito.</p>
-                    </div>
-                  </div>
-              </div>
-          </div>
-          <div class="col-sm mt-4">
-              <div class="flip-card">
-                  <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                      <div class="services-components text-center">
-                        <img src="assets/img/servicios/11.jpeg">
-                      </div>
-                    </div>
-                    <div class="flip-card-back flex">
-                        <p>El libro que acompaña el Taller Conecta con tu Valentía, en formato PDF, de fácil lectura y aplicación. 
-                          Para animarte a dar ese paso que lo va a cambiar todo.</p>
-                    </div>
-                  </div>
-              </div>
+            </div>
           </div>
           <div class="col-sm mt-4">
             <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <div class="services-components text-center">
-                      <img src="assets/img/servicios/12.jpeg">
-                    </div>
-                  </div>
-                  <div class="flip-card-back flex">
-                      <p>@masajesterapeuticosol    Masajes relajantes, descontracturantes, deportivos, reductores, Quiropraxia, Reflexologia  y Drenaje linfático.  Sesiones a domicilio y asesoramiento virtual.  Automasajes</p>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/2.jpeg">
                   </div>
                 </div>
+                <div class="flip-card-back flex">
+                  <p>
+                    Sesiones exclusivas porque las temáticas femeninas requieren una atención especial y comprometida.
+                    Maternidad Pareja Hogar Trabajo Propósito de vida.
+                  </p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/3.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>Si hace tiempo estás queriendo hacer algo y no estás pudiendo, si pensás mucho, no decides ni te
+                    organizas, te distraes y sientes que no avanzas, toma sesiones de Coaching motivacional conmigo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/4.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>Caro y Oswel. Brindamos asesoramiento a personas emprendedoras que quieran crecer y tener éxito en
+                    lo que hacen. Pprimera sesión y diagnóstico gratuito</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/5.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>@fatimadacruzcoach Circulo de Realización Personal con Fátima Da Cruz Programa que te brinda 6
+                    estrategias claves para materializar lo que deseas y elevar tu frecuencia vibraria</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/6.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>Sesiones online individuales y talleres grupales Sana tu linaje familiar
+                    Honra la historia de quienes han permitido que vos hoy estés acá</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/7.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>@carottonello Carolina Ottonello Una sesión para saber cuál es la energía que te atraviesa, qué
+                    quieres manifestar y cuáles son los bloqueos que obstruyen tu avance.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/8.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>@mvdesign Verónica Perez Tu emprendimiento con una personalidad única. Logo Paleta de colores
+                    Estilo Gestión de marca y producto </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/9.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>Asesoramiento profesional en RRSS. Guía y organización de contenido tendencia </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/10.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>@soykiki.luna La experta en creación de contenido para RRSS analiza tu emprendimiento y se encarga
+                    del material que necesitas publicar para que tu negocio crezca, sea reconocido y tenga éxito.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/11.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>El libro que acompaña el Taller Conecta con tu Valentía, en formato PDF, de fácil lectura y
+                    aplicación.
+                    Para animarte a dar ese paso que lo va a cambiar todo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <div class="services-components text-center">
+                    <img src="assets/img/servicios/12.jpeg">
+                  </div>
+                </div>
+                <div class="flip-card-back flex">
+                  <p>@masajesterapeuticosol Masajes relajantes, descontracturantes, deportivos, reductores, Quiropraxia,
+                    Reflexologia y Drenaje linfático. Sesiones a domicilio y asesoramiento virtual. Automasajes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm mt-4">
+            <div class="flip-card">
+             <div class="flip-card-inner">
+              <div class="flip-card-front">
+               <div class="services-components text-center">
+                <img src="assets/img/servicios/elcoachingesparatodos.png">
+               </div>
+              </div>
+               <div class="flip-card-back flex">
+                 <p>La mentoría "El Coaching es para Todos" es un programa de formación diseñado para fortalecer su identidad como coach, desarrollar estrategias efectivas de venta y captación de clientes, y aplicar herramientas prácticas para vivir del coaching. Duración 12 semanas. Inscribete aquí <a href="https://forms.gle/oU5jjQqJa6egLQbT6">Enlace de inscripción</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="col-sm mt-4">
+          <div class="flip-card">
+           <div class="flip-card-inner">
+            <div class="flip-card-front">
+             <div class="services-components text-center">
+              <img src="assets/img/servicios/editorialamay.png">
+             </div>
+            </div>
+             <div class="flip-card-back flex">
+               <p>@editorialamay Nos dedicamos a darle estructura a tus cursos, creamos material visual de impacto y te acompañamos en el proceso de su lanzamiento. Editorial Amay. Somos el puente entre tu conocimiento y quienes lo necesitan.</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="col-sm mt-4">
         </div>
-
-        <hr>
-        
+      </div>
         <div class="row content">
           <div class="col-lg-6">
             <img src="assets/img/custom/confia.jpg" class="img-fluid" alt="">
@@ -607,8 +571,7 @@
           <p class="description">Ayudamos a emprendedoras y emprendedores a que consigan aumentar las ventas, mejorar la
             productividad, ordenar las finanzas, posicionar su marca y crecer en lo que hacen, a través de estrategias
             únicas definidas y prácticas.</p>
-          <a href="https://forms.gle/ja7Hn6qmFk2PqN8c6" target="_blank" class="mas-info"><span>COMUNIDAD DE
-              EMPRENDEDORES</span></a>
+          <a href="https://chat.whatsapp.com/CEZ8CIdtppE8dZSVt7kOqI" target="_blank" class="mas-info-comunidad"><span>INGRESÁ A TU VOZ ES VOS - EMPRENDER</span></a>
           <br><br>
           <span style="font-style: italic; font-size: 0.9em; width: 100%;">"El éxito es colectivo. No estás sola/o,
             sumate a nuestra comunidad"</span>
@@ -618,7 +581,7 @@
             situación, tener acceso al material y capacitaciones que te brindamos, intercambiar experiencias e ideas con
             otros emprendedores, seguirlos y que te sigan en tus redes, ofrecerles y contarles lo que haces, hacer
             trueque de productos y/o servicios y mucho más.</p>
-          <img class="img-comunidad" src="./assets/img/custom/comunidad.jpg">
+          <img class="img-comunidad" src="./assets/img/custom/logocomunidadtuvozesvos.png">
           <br><br>
           <a class="mas-info">Completa el formulario y empezá a crecer</a>
           <br><br>
@@ -642,14 +605,28 @@
 
           <div class="marquee">
             <div class="marquee--inner">
-              
+
               <span>
-                <div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div><div class="orb purple"></div><div class="orb green"></div><div class="orb"></div>
+                <div class="orb"></div>
+                <div class="orb red"></div>
+                <div class="orb yellow"></div>
+                <div class="orb blue"></div>
+                <div class="orb orange"></div>
+                <div class="orb purple"></div>
+                <div class="orb green"></div>
+                <div class="orb"></div>
               </span>
               <span>
-                <div class="orb"></div><div class="orb red"></div><div class="orb yellow"></div><div class="orb blue"></div><div class="orb orange"></div><div class="orb purple"></div><div class="orb green"></div><div class="orb"></div>
+                <div class="orb"></div>
+                <div class="orb red"></div>
+                <div class="orb yellow"></div>
+                <div class="orb blue"></div>
+                <div class="orb orange"></div>
+                <div class="orb purple"></div>
+                <div class="orb green"></div>
+                <div class="orb"></div>
               </span>
-          
+
             </div>
           </div>
 
@@ -657,8 +634,7 @@
             <div class="marquee--inner">
               <span class="marquee-span">
                 <div class="orb">
-                  <a href="https://instagram.com/cosmetologa_maureraisa"><img
-                      src="./assets/img/custom/1.jpg"></a>
+                  <a href="https://instagram.com/cosmetologa_maureraisa"><img src="./assets/img/custom/1.jpg"></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/masajesterapeuticosol"><img src="./assets/img/custom/2.jpg"></a>
@@ -670,23 +646,20 @@
                   <a href="https://instagram.com/fatimadacruzcoach"><img src="./assets/img/custom/4.jpg"></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/locutoresencasa"><img
-                      src="./assets/img/custom/5.jpg"></a>
+                  <a href="https://instagram.com/locutoresencasa"><img src="./assets/img/custom/5.jpg"></a>
                 </div>
                 <div class="orb">
                   <a href="https://www.instagram.com/moda360.arg/"><img src="./assets/img/custom/6.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://www.instagram.com/anita_rajcovich/"><img src="./assets/img/custom/7.jpg"
-                      alt=""></a>
+                  <a href="https://www.instagram.com/anita_rajcovich/"><img src="./assets/img/custom/7.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/despiertaytransmuta.cv/"><img src="./assets/img/custom/8.jpg"
                       alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/musas.mgta/"><img src="./assets/img/custom/9.jpg"
-                      alt=""></a>
+                  <a href="https://instagram.com/musas.mgta/"><img src="./assets/img/custom/9.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/mvdisenioyletras"><img src="./assets/img/custom/10.jpg" alt=""></a>
@@ -698,8 +671,7 @@
                   <a href="https://instagram.com/yosilvialevy"><img src="./assets/img/custom/12.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://www.instagram.com/paulitarotok/"><img src="./assets/img/custom/13.jpg"
-                      alt=""></a>
+                  <a href="https://www.instagram.com/paulitarotok/"><img src="./assets/img/custom/13.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://www.instagram.com/universocreativo.lm"><img src="./assets/img/custom/14.jpg"
@@ -712,8 +684,7 @@
                   <a href="https://instagram.com/ots_puntacana"><img src="./assets/img/custom/16.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/kumestore_ok"><img src="./assets/img/custom/17.jpg"
-                      alt=""></a>
+                  <a href="https://instagram.com/kumestore_ok"><img src="./assets/img/custom/17.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/soyagustinduarte"><img src="./assets/img/custom/18.jpg" alt=""></a>
@@ -769,8 +740,7 @@
               </span>
               <span class="marquee-span">
                 <div class="orb">
-                  <a href="https://instagram.com/cosmetologa_maureraisa"><img
-                      src="./assets/img/custom/1.jpg"></a>
+                  <a href="https://instagram.com/cosmetologa_maureraisa"><img src="./assets/img/custom/1.jpg"></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/masajesterapeuticosol"><img src="./assets/img/custom/2.jpg"></a>
@@ -782,23 +752,20 @@
                   <a href="https://instagram.com/fatimadacruzcoach"><img src="./assets/img/custom/4.jpg"></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/locutoresencasa"><img
-                      src="./assets/img/custom/5.jpg"></a>
+                  <a href="https://instagram.com/locutoresencasa"><img src="./assets/img/custom/5.jpg"></a>
                 </div>
                 <div class="orb">
                   <a href="https://www.instagram.com/moda360.arg/"><img src="./assets/img/custom/6.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://www.instagram.com/anita_rajcovich/"><img src="./assets/img/custom/7.jpg"
-                      alt=""></a>
+                  <a href="https://www.instagram.com/anita_rajcovich/"><img src="./assets/img/custom/7.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/despiertaytransmuta.cv/"><img src="./assets/img/custom/8.jpg"
                       alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/musas.mgta/"><img src="./assets/img/custom/9.jpg"
-                      alt=""></a>
+                  <a href="https://instagram.com/musas.mgta/"><img src="./assets/img/custom/9.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/mvdisenioyletras"><img src="./assets/img/custom/10.jpg" alt=""></a>
@@ -810,8 +777,7 @@
                   <a href="https://instagram.com/yosilvialevy"><img src="./assets/img/custom/12.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://www.instagram.com/paulitarotok/"><img src="./assets/img/custom/13.jpg"
-                      alt=""></a>
+                  <a href="https://www.instagram.com/paulitarotok/"><img src="./assets/img/custom/13.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://www.instagram.com/universocreativo.lm"><img src="./assets/img/custom/14.jpg"
@@ -824,8 +790,7 @@
                   <a href="https://instagram.com/ots_puntacana"><img src="./assets/img/custom/16.jpg" alt=""></a>
                 </div>
                 <div class="orb">
-                  <a href="https://instagram.com/kumestore_ok"><img src="./assets/img/custom/17.jpg"
-                      alt=""></a>
+                  <a href="https://instagram.com/kumestore_ok"><img src="./assets/img/custom/17.jpg" alt=""></a>
                 </div>
                 <div class="orb">
                   <a href="https://instagram.com/soyagustinduarte"><img src="./assets/img/custom/18.jpg" alt=""></a>
@@ -941,8 +906,12 @@
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
             in iste officiis commodi quidem hic quas.</p>
         </div>
-        
-        <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-1" src="https://www.instagram.com/tuvozesvos/embed/?cr=1&amp;v=14&amp;wp=540&amp;rd=https%3A%2F%2Fbehold.so&amp;rp=%2Fguides%2Fhow-to-embed-an-instagram-feed-on-your-website%2F#%7B%22ci%22%3A1%2C%22os%22%3A768.2999999523163%2C%22ls%22%3A395%2C%22le%22%3A690.6000000238419%7D" allowtransparency="true" allowfullscreen="true" frameborder="0" height="430" data-instgrm-payload-id="instagram-media-payload-1" scrolling="no" style="background: white; max-width: 80%; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0 auto; min-width: 326px; padding: 0px;"></iframe>
+
+        <iframe class="instagram-media instagram-media-rendered" id="instagram-embed-1"
+          src="https://www.instagram.com/tuvozesvos/embed/?cr=1&amp;v=14&amp;wp=540&amp;rd=https%3A%2F%2Fbehold.so&amp;rp=%2Fguides%2Fhow-to-embed-an-instagram-feed-on-your-website%2F#%7B%22ci%22%3A1%2C%22os%22%3A768.2999999523163%2C%22ls%22%3A395%2C%22le%22%3A690.6000000238419%7D"
+          allowtransparency="true" allowfullscreen="true" frameborder="0" height="430"
+          data-instgrm-payload-id="instagram-media-payload-1" scrolling="no"
+          style="background: white; max-width: 80%; width: calc(100% - 2px); border-radius: 3px; border: 1px solid rgb(219, 219, 219); box-shadow: none; display: block; margin: 0 auto; min-width: 326px; padding: 0px;"></iframe>
 
         <!-- <div class="recent-photos-slider swiper">
           <div class="swiper-wrapper align-items-center">
@@ -990,13 +959,19 @@
     </section><!-- End Recent Photos Section -->
 
     <div class="new-social redes-sociales">
-        <a href="https://www.youtube.com/playlist?list=PLQ5bj725ZxfJF4pSrlMwIjYyBjvhdCKQ7"><img src="./assets/img/custom/icono-radio.png" width="80"></a><a href="https://www.tiktok.com/@tuvozesvos"><img src="./assets/img/custom/icono-tiktok.png" width="80"></a><a href="https://open.spotify.com/show/5MagAqhDGNkhrtFL2C4Kda"><img src="./assets/img/custom/icono-spotify.png" width="80"></a>
-        <a href="https://www.instagram.com/tuvozesvos/"><img src="./assets/img/custom/icono-instagram.png" width="80"></a><a href="mailto:tuvozesvos@gmail.com"><img src="./assets/img/custom/icono-email.png" width="80"></a><a href="https://cafecito.app/tuvozesvos"><img src="./assets/img/custom/icono-cafecito.png" width="80"></a>
-        <a href="https://www.youtube.com/@tuvozesvos"><img src="./assets/img/custom/icono-youtube.png" width="80"></a>
-      </div>
+      <a href="https://www.tiktok.com/@tuvozesvos"><img
+          src="./assets/img/custom/icono-tiktok.png" width="80"></a><a
+        href="https://open.spotify.com/show/5MagAqhDGNkhrtFL2C4Kda"><img src="./assets/img/custom/icono-spotify.png"
+          width="80"></a>
+      <a href="https://www.instagram.com/tuvozesvos/"><img src="./assets/img/custom/icono-instagram.png"
+          width="80"></a><a href="mailto:tuvozesvos@gmail.com"><img src="./assets/img/custom/icono-email.png"
+          width="80"></a><a href="https://cafecito.app/tuvozesvos"><img src="./assets/img/custom/icono-cafecito.png"
+          width="80"></a>
+      <a href="https://www.youtube.com/@tuvozesvos"><img src="./assets/img/custom/icono-youtube.png" width="80"></a>
+    </div>
 
   </main><!-- End #main -->
-<!-- 
+  <!-- 
 <div id="demo-modal" class="modal">
     <div class="modal__content">
         <h1 style="font-size: 36px;">Taller Conecta con tu Valentía 2da Edición</h1>
@@ -1026,17 +1001,6 @@
     <div class="container">
       <h3>Tu Voz es Vos</h3>
       <p>Un espacio de acompañamiento y desarrollo personal.</p>
-      <div class="redes-sociales">
-        <a href="https://www.youtube.com/playlist?list=PLQ5bj725ZxfJF4pSrlMwIjYyBjvhdCKQ7"><img src="./assets/img/custom/icono-radio.png" width="80"></a>
-        <a href="https://www.tiktok.com/@tuvozesvos"><img src="./assets/img/custom/icono-tiktok.png" width="80"></a><a
-          href="https://open.spotify.com/show/5MagAqhDGNkhrtFL2C4Kda"><img src="./assets/img/custom/icono-spotify.png"
-            width="80"></a>
-        <a href="https://www.instagram.com/tuvozesvos/"><img src="./assets/img/custom/icono-instagram.png"
-            width="80"></a><a href="mailto:tuvozesvos@gmail.com"><img src="./assets/img/custom/icono-email.png"
-            width="80"></a><a href="https://cafecito.app/tuvozesvos"><img src="./assets/img/custom/icono-cafecito.png"
-            width="80"></a>
-        <a href="https://www.youtube.com/@tuvozesvos"><img src="./assets/img/custom/icono-youtube.png" width="80"></a>
-      </div>
       <div class="copyright">
         &copy; Copyright <strong><span>Tu Voz es Vos</span></strong>.
         <br>Todos los Derechos Reservados
@@ -1111,46 +1075,46 @@
   <script src="assets/js/custom-slider.js"></script>
 
   <script>
-/*     // Function to open the page with a specific fragment identifier
-    function openPageWithFragment() {
-      // Set the location to the desired URL with the fragment identifier
-      window.location = "index.html#demo-modal";
-    }
+    /*     // Function to open the page with a specific fragment identifier
+        function openPageWithFragment() {
+          // Set the location to the desired URL with the fragment identifier
+          window.location = "index.html#demo-modal";
+        }
+    
+        // Wait for the DOM to be fully loaded
+        document.addEventListener("DOMContentLoaded", function() {
+          // Call the function to open the page with the specified fragment identifier
+          openPageWithFragment();
+        }); */
 
-    // Wait for the DOM to be fully loaded
-    document.addEventListener("DOMContentLoaded", function() {
-      // Call the function to open the page with the specified fragment identifier
-      openPageWithFragment();
-    }); */
 
+    // Flipear tarjetas de servicios en móvil
 
-  // Flipear tarjetas de servicios en móvil
+    var findMiddleElement = (function (docElm) {
+      var viewportHeight = docElm.clientHeight,
+        elements = $('.flip-card-inner');
 
-  var findMiddleElement = (function(docElm){
-    var viewportHeight = docElm.clientHeight,
-        elements = $('.flip-card-inner'); 
-
-    return function(e){
+      return function (e) {
         var middleElement;
         var viewportWidth = window.innerWidth; // Get viewport width
 
         if (viewportWidth < 768) { // Check if viewport width is less than 768 (mobile)
-            if( e && e.type == 'resize' )
-                viewportHeight = docElm.clientHeight;
+          if (e && e.type == 'resize')
+            viewportHeight = docElm.clientHeight;
 
-                elements.each(function(){
-                    var pos = this.getBoundingClientRect().top;
-                    // If an element is more or less in the middle of the viewport
-                    if( pos > viewportHeight/2.5 && pos < viewportHeight/1.5 ){
-                        middleElement = this;
-                        middleElement.style.transform = 'rotateY(180deg)';
-                    } else {
-                        // Reset transformation for elements not in the middle
-                        this.style.transform = '';
-                    }
-                });
+          elements.each(function () {
+            var pos = this.getBoundingClientRect().top;
+            // If an element is more or less in the middle of the viewport
+            if (pos > viewportHeight / 2.5 && pos < viewportHeight / 1.5) {
+              middleElement = this;
+              middleElement.style.transform = 'rotateY(180deg)';
+            } else {
+              // Reset transformation for elements not in the middle
+              this.style.transform = '';
             }
+          });
         }
+      }
     })(document.documentElement);
 
     $(window).on('scroll resize', findMiddleElement);
@@ -1160,21 +1124,21 @@
     function setIframeHeight() {
       var iframe = document.getElementById('instagram-embed-1');
       var windowWidth = window.innerWidth;
-  
+
       if (windowWidth <= 768) {
         iframe.height = 430; // Mobile height
       } else {
         iframe.height = 900; // Desktop height
       }
     }
-  
+
     // Call the function initially to set the height
     setIframeHeight();
-  
+
     // Add an event listener to adjust the height if the window is resized
     window.addEventListener('resize', setIframeHeight);
   </script>
-  
+
 </body>
 
 </html>
